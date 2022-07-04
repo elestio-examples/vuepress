@@ -6,6 +6,8 @@ config:
   buildDir: "./src/.vuepress/dist"
   runCommand: "npm run dev"
   installCommand: "npm install"
+  icon: "images/vue.svg"
+  screenshot: "images/vuepress.png"
 ports:
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
@@ -24,3 +26,6 @@ exposedPorts:
 environments:
   - key: "ENV"
     value: "production"
+webUI:
+  - url: "https://[CI_CD_DOMAIN]"
+    label: "Website"    
